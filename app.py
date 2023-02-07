@@ -1,5 +1,7 @@
-import requests
 import streamlit as st
+st.set_page_config(layout="wide")
+
+import requests
 import json
 
 
@@ -45,7 +47,6 @@ st.write(hide_footer_style, unsafe_allow_html=True)
 
 query_params = st.experimental_get_query_params()
 mode = query_params.get("mode", ["uk"])[0]
-st.set_page_config(layout="wide")
 
 if mode == "uk":
     with st.expander("Compute current-law taxes and benefits"):
