@@ -3,6 +3,7 @@ st.set_page_config(layout="wide")
 
 import requests
 import json
+from streamlit_ace import st_ace
 
 
 hide_footer_style = """
@@ -76,8 +77,9 @@ if mode == "uk":
         )
         with data_input:
             st.caption("Describe people and households")
-            situation = data_input.text_area(
-                "Situation",
+            situation = st_ace(
+                language="json5",
+                theme="github",
                 value=json.dumps(default_situation, indent=4),
                 height=300,
             )
@@ -132,8 +134,9 @@ print(json.dumps(result, indent=4))"""
         )
         with data_input:
             st.caption("Describe people, households and reforms")
-            situation = data_input.text_area(
-                "Situation and reform",
+            situation = st_ace(
+                language="json",
+                theme="github",
                 value=json.dumps(default_situation, indent=4),
                 height=300,
             )
@@ -183,8 +186,9 @@ if mode == "us":
         )
         with data_input:
             st.caption("Describe people and households")
-            situation = data_input.text_area(
-                "Situation",
+            situation = st_ace(
+                language="json",
+                theme="github",
                 value=json.dumps(default_situation, indent=4),
                 height=300,
             )
@@ -241,8 +245,9 @@ print(json.dumps(result, indent=4))"""
         )
         with data_input:
             st.caption("Describe people, households and reforms")
-            situation = data_input.text_area(
-                "Situation and reform",
+            situation = st_ace(
+                language="json",
+                theme="github",
                 value=json.dumps(default_situation, indent=4),
                 height=300,
             )
