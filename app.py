@@ -49,7 +49,7 @@ query_params = st.experimental_get_query_params()
 mode = query_params.get("mode", ["uk"])[0]
 
 if mode == "uk":
-    with st.expander("Compute current-law taxes and benefits"):
+    with st.expander("Compute current-law taxes and benefits", expanded=True):
         default_situation = {
             "household": {
                 "people": {
@@ -158,7 +158,7 @@ print(json.dumps(result, indent=4))"""
 
 
 if mode == "us":
-    with st.expander("Compute current-law taxes and benefits"):
+    with st.expander("Compute current-law taxes and benefits", expanded=True):
         default_situation = {
             "people": {
                 "parent": {
