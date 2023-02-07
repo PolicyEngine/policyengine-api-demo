@@ -72,7 +72,7 @@ if mode == "uk":
             },
         }
         data_input, api_output, code_snippet = st.tabs(
-            ["JSON input", "API output", "Code snippet"]
+            ["JSON input", "API output", "Python snippet"]
         )
         with data_input:
             st.caption("Describe people and households")
@@ -128,7 +128,7 @@ print(json.dumps(result, indent=4))"""
             },
         }
         data_input, api_output, code_snippet = st.tabs(
-            ["JSON input", "API output", "Code snippet"]
+            ["JSON input", "API output", "Python snippet"]
         )
         with data_input:
             st.caption("Describe people, households and reforms")
