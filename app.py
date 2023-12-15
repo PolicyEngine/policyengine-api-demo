@@ -26,8 +26,9 @@ h5,
 h6,
 p,
 span,
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
 div {
-  font-family: "Roboto", sans-serif !important;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 500;
 }
 [data-baseweb="slider"] {

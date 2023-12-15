@@ -1,6 +1,3 @@
-[theme]
-primaryColor="#2C6496"
-font="sans serif"
 [server]
 enableCORS = false
 enableXsrfProtection = false
