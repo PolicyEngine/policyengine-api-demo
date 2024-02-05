@@ -85,7 +85,7 @@ if mode == "uk":
                 height=300,
             )
             result = requests.post(
-                "https://api.policyengine.org/uk/calculate",
+                "https://household.api.policyengine.org/uk/calculate_demo",
                 json=json.loads(situation),
             ).json()
 
@@ -94,7 +94,7 @@ if mode == "uk":
 import json
 
 situation = {situation}
-result = requests.post("https://api.policyengine.org/uk/calculate", json=situation).json()
+result = requests.post("https://household.api.policyengine.org/uk/calculate_demo", json=situation).json()
 print(json.dumps(result, indent=4))"""
             st.caption("Python code snippet")
             st.code(code_snippet)
@@ -142,7 +142,7 @@ print(json.dumps(result, indent=4))"""
                 height=300,
             )
             result = requests.post(
-                "https://api.policyengine.org/uk/calculate",
+                "https://household.api.policyengine.org/uk/calculate_demo",
                 json=json.loads(situation),
             ).json()
 
@@ -151,7 +151,7 @@ print(json.dumps(result, indent=4))"""
 import json
 
 situation = {situation}
-result = requests.post("https://api.policyengine.org/uk/calculate", json=situation).json()
+result = requests.post("https://household.api.policyengine.org/uk/calculate_demo", json=situation).json()
 print(json.dumps(result, indent=4))"""
             st.caption("Python code snippet")
             st.code(code_snippet)
@@ -194,7 +194,7 @@ if mode == "us":
                 height=300,
             )
             result = requests.post(
-                "https://api.policyengine.org/us/calculate",
+                "https://household.api.policyengine.org/us/calculate_demo",
                 json={
                     "household": json.loads(situation),
                 },
@@ -205,7 +205,7 @@ if mode == "us":
 import json
 
 situation = {situation}
-result = requests.post("https://api.policyengine.org/us/calculate", json=situation).json()
+result = requests.post("https://household.api.policyengine.org/us/calculate_demo", json=situation).json()
 print(json.dumps(result, indent=4))"""
             st.caption("Python code snippet")
             st.code(code_snippet)
@@ -253,7 +253,7 @@ print(json.dumps(result, indent=4))"""
                 height=300,
             )
             result = requests.post(
-                "https://api.policyengine.org/us/calculate",
+                "https://household.api.policyengine.org/us/calculate_demo",
                 json=json.loads(situation),
             ).json()
 
@@ -262,7 +262,7 @@ print(json.dumps(result, indent=4))"""
 import json
 
 situation = {situation}
-result = requests.post("https://api.policyengine.org/us/calculate", json=situation).json()
+result = requests.post("https://household.api.policyengine.org/us/calculate_demo", json=situation).json()
 print(json.dumps(result, indent=4))"""
             st.caption("Python code snippet")
             st.code(code_snippet)
