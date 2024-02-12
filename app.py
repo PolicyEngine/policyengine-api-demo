@@ -5,13 +5,13 @@ import requests
 import json
 from streamlit_ace import st_ace
 
-
 hide_footer_style = """
 <style>
-header {
+[class^="embeddedAppMetaInfoBar_container"] {
     display: none !important;
+    visibility: hidden !important;
 }
-footer {
+header {
     display: none !important;
 }
 section > div.block-container {
