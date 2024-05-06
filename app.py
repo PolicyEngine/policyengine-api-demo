@@ -47,7 +47,7 @@ footer {
 """
 st.markdown(hide_footer_style, unsafe_allow_html=True)
 
-query_params = st.experimental_get_query_params()
+query_params = st.query_params()
 mode = query_params.get("mode", ["uk"])[0]
 
 if mode == "uk":
