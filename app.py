@@ -47,8 +47,7 @@ footer {
 """
 st.markdown(hide_footer_style, unsafe_allow_html=True)
 
-query_params = st.query_params()
-mode = query_params.get("mode", ["uk"])[0]
+mode = st.query_params.get("mode", ["uk"])[0]
 
 if mode == "uk":
     with st.expander("Compute current-law taxes and benefits", expanded=True):
